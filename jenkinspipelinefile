@@ -5,7 +5,7 @@ pipeline {
 		label "windows_slave"
 	}
 	
-	// start of stages : build, test, deploy ...
+	// start of the stages : build, test, deploy ...
 	stages {
 		// start of stage : build
 		stage('build') {
