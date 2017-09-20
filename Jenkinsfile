@@ -16,6 +16,13 @@ pipeline {
       }
     }
     
+        // Publish Results
+    stage('Results') {
+      steps {
+        junit '**/target/surefire-reports/*.xml'
+      }
+    } 
+    
         // start of deploy state
     stage('deploy') {
       // define step to run
