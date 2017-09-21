@@ -38,7 +38,7 @@ pipeline {
     } 
     stage('email notification') {
       steps {
-        emailext (recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], to: 'vishwamitra.ganji@yahoo.com')
+        emailext (subject:, body:, recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], to: 'vishwamitra.ganji@yahoo.com')
       }
     }  
     
