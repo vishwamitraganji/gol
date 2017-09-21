@@ -36,11 +36,6 @@ pipeline {
         bat 'sc start Tomcat7'
       }
     } 
-    stage('email notification') {
-      steps {
-        emailext (subject:running, body:running the test, recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], to: 'vishwamitra.ganji@yahoo.com')
-      }
-    }  
     
   } 
 }
