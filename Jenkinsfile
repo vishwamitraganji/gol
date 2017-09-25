@@ -23,6 +23,12 @@ pipeline {
       }
     } 
     
+    stage('User interaction') {
+      steps {
+        input message: 'Do u want to continue? Proceed or Abort', ok: 'Yes'
+      }
+    } 
+    
         // start of deploy state
     stage('deploy') {
       // define step to run
