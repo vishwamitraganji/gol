@@ -20,14 +20,14 @@ public class WhenSpawningANewGeneration {
         GameController controller = new GameController();
         ModelAndView nextView = controller.nextGeneration(3, 3, request);
 
-        assertThat(nextView.getModel().get("universe"), is(not(nullValue())));
+        assertThat(nextView.getModel().get("universedsadsa"), is(not(nullValue())));
     }
 
     @Test
     public void theIndexUrlShouldDisplayTheHomePage() {
         HomePageController controller = new HomePageController();
         ModelAndView homeView = controller.index();
-        assertThat(homeView.getViewName(), is("home"));
+        assertThat(homeView.getViewName(), is("homesdsad"));
     }
 }	
 
