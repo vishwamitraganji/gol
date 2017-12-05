@@ -11,14 +11,14 @@ public class WhenDisplayingTheHomePage {
 
     @Test
     public void theHomeUrlShouldDisplayTheHomePage() {
-        HomePageController controller = new HomePageController();
+        HomePageController controller = new HomePageController1();
         ModelAndView homeView = controller.home();
         assertThat(homeView.getViewName(), is("home1"));
     }
 
     @Test
     public void theIndexUrlShouldDisplayTheHomePage() {
-        HomePageController controller = new HomePageController();
+        HomePageController controller = new HomePageController1();
         ModelAndView homeView = controller.index();
         assertThat(homeView.getViewName(), is("home1"));
     }
